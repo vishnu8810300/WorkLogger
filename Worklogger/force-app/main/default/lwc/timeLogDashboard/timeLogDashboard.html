@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Employee Time Tracker Dashboard">
+      <div class="slds-p-around_medium">
+  
+        <div class="slds-grid slds-wrap">  
+          <div class="slds-col slds-size_10-of-12">
+      
+     </div>
+     <div class="slds-col slds-size_2-of-12">
+       <span> <lightning-button label="Add Time Entry" onclick={toggleForm} variant="brand" class="slds-m-bottom_medium"></lightning-button>
+       </span>
+     </div>
+     </div>
+        <!-- Add Entry Section -->
+       
+        <template if:true={showForm}>
+          <c-time-log-form onlogsubmitted={handleLogSubmitted}></c-time-log-form>
+        </template>
+  
+        <template if:true={logs.length}>
+          <lightning-datatable
+            key-field="id"
+            data={logs}
+            columns={columns}
+            hide-checkbox-column="true">
+          </lightning-datatable>
+        </template>
+  
+        <template if:true={isLoading}>
+          <lightning-spinner size="medium"></lightning-spinner>
+        </template>
+  
+        <template if:true={error}>
+          <div class="slds-text-color_error">Error loading data: {error}</div>
+        </template>
+  
+      </div>
+    </lightning-card>
+  </template>
