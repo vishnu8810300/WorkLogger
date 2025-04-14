@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>DailyTimeLogReminderBatch</members>
+		<members>ReusableLookupController</members>
+		<members>TimeLogController</members>
+		<members>WeeklyTimeLogReminderBatch</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Work_Logger</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>Project__c</members>
+		<members>Time_Log__c</members>
+		<members>Work_Logger1</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>Public/fUiNMJrhmKwYczIfRYnCCqCHKYqboE</members>
+		<members>Public/kHVdwVFnroVThgDMdQkWxnYYNXvXUP</members>
+		<name>Dashboard</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>Employee Profile</members>
+		<members>Manager Profile</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>unfiled$public/Daily_Project_Report_9Mz</members>
+		<members>unfiled$public/Monthly_Employee_Project_Report_5P4</members>
+		<name>Report</name>
+	</types>
+	<types>
+		<members>CEO</members>
+		<members>CFO</members>
+		<members>COO</members>
+		<members>Employee</members>
+		<members>Manager</members>
+		<name>Role</name>
+	</types>
+	<version>63.0</version>
+</Package>
